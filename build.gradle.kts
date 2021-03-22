@@ -54,6 +54,6 @@ tasks.withType<KotlinCompile> {
 
 
 tasks.getByName<BootBuildImage>("bootBuildImage") {
-	imageName = "bill/minispring:latest"
+	imageName = "bill01/minispring:latest"
 	isVerboseLogging = true
 }
