@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bill02
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bill02
+  template:
+    metadata:
+      labels:
+        app: bill02
+    spec:
+      containers:
+        - name: bill02
+          image: 'registry.digitalocean.com/sds-do-cr01/bill02:v2'
+          ports:
+          - containerPort: 8080
+      restartPolicy: Always
