@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class SimpleCtrl {
 	
-	@Value("${test01}")
-	private String test01;
+//	@Value("${test01}")
+//	private String test01;
 	
 	@GetMapping("/test01")
 	public String example01() {
@@ -25,7 +25,8 @@ public class SimpleCtrl {
 	}
 	@GetMapping("/test03")
 	public String example03() {
-		System.out.println("test03 = "+test01);
+//		System.out.println("test03 = "+test01);
+		System.out.println("test03");
 		return "GOGOGO!!!!";
 	}
 	
