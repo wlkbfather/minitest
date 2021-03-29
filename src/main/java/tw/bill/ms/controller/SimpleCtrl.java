@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api")
-public class controller {
+public class SimpleCtrl {
 	
 	@Value("${test01}")
 	private String test01;
