@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class SimpleCtrl {
 
-	@Value("${acoount}")
+	@Value("${account}")
 	private String account;
 	
 	@Value("${password}")
