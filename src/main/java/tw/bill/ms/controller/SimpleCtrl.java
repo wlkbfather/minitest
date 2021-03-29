@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class SimpleCtrl {
 
-	@Value("${acoount}")
+	@Value("${bill01.acoount}")
 	private String account;
 	
-	@Value("${password}")
+	@Value("${bill01.password}")
 	private String password;
 	
 	@GetMapping("/test01")
