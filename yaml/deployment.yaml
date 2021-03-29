@@ -16,6 +16,12 @@ spec:
       containers:
         - name: bill01
           image: 'registry.digitalocean.com/sds-do-cr01/bill02:latest'
+          env:
+          - name: configTest
+            valueFrom:
+              configMapKeyRef:
+                name: bill-config
+                key: test01
           ports:
           - containerPort: 8080
       restartPolicy: Always
