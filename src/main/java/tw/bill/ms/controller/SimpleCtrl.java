@@ -9,16 +9,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class SimpleCtrl {
 
-//	@Value("${acoount}")
-//	private String account;
+	@Value("${acoount}")
+	private String account;
 	
-//	@Value("${password}")
-//	private String password;
+	@Value("${password}")
+	private String password;
 	
 	@GetMapping("/test01")
 	public String test01() {
-//		System.out.println("account = "+account);
-//		System.out.println("password = "+password);
+		System.out.println("account = "+account);
+		System.out.println("password = "+password);
 		return "Hello World!!";
 	}
 	
