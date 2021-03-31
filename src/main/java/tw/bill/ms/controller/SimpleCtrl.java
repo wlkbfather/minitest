@@ -15,10 +15,16 @@ public class SimpleCtrl {
 	@Value("${password}")
 	private String password;
 	
+	
+	@Value("${billspring.url}")
+	private String url;
+	
+	
 	@GetMapping("/test01")
 	public String test01() {
 		System.out.println("account = "+account);
 		System.out.println("password = "+password);
+		System.out.println("url = "+url);
 		return "Hello World!!";
 	}
 	
