@@ -2,4 +2,4 @@ account: bill01
 password: '123456'
 spring:
   profiles:
-    active: '@activeProfile@'
+    active: 'k8s'
