@@ -1,0 +1,4 @@
+billspring:
+  url: "127.0.0.3"
+  account: billaccount
+  password: '12345'
