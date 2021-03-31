@@ -16,6 +16,7 @@ spec:
       containers:
         - name: bill01
           image: 'registry.digitalocean.com/sds-do-cr01/bill02:latest'
+          imagePullPolicy: Always
           env:
           - name: configTest
             valueFrom:
